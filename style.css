@@ -376,6 +376,7 @@ main{
     font-weight: 500;
     color: #7c8ba1;
     line-height: 1.625;
+
 }
 
 @media (max-width: 1024px) {
@@ -477,7 +478,7 @@ section {
 
 .row {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -536,10 +537,6 @@ section {
     line-height: 1.625;
 }
 
-#quailty .btn {
-    margin-top: 32px;
-}
-
 .btn {
     background-color: #6415ff;
     padding: 12px 32px;
@@ -551,6 +548,7 @@ section {
     transition: all 300ms ease;
     cursor: pointer;
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .quality__img--wrapper {
@@ -569,6 +567,20 @@ section {
 
 img {
     width: 100%;
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
+    z-index: 0;
+    display: block;
 }
 
 /* 
@@ -1046,6 +1058,7 @@ p {
     padding: 1rem 2rem;
     transition: 300ms;
     border-radius: 9999px;
+    border: none;
 }
 
 .plan:nth-child(2) .plan__button {
@@ -1188,6 +1201,7 @@ Testimonials
     border-radius: 50%;
     margin: 0px 12px;
     transition: 300ms;
+    border: none;
 }
 
 .testimonial__button svg {
@@ -1301,10 +1315,19 @@ footer {
     overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+    footer {
+        padding: 80px 32px;
+    }
+}
+
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .links {
@@ -1315,16 +1338,15 @@ footer {
 .footer__columns {
     margin-top: -48px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 
 .footer__column {
     margin-top: 48px;
     display: flex;
     flex-direction: column; 
-    align-items: center;
+    align-items: flex-start;
     z-index: 2;
 }
 
@@ -1366,7 +1388,6 @@ footer {
     margin: 64px 0px;
     background: rgb(116, 44, 255);
 }
-
 .footer__bottom {
     display: flex;
     justify-content: space-between;
@@ -1411,10 +1432,9 @@ footer {
     padding: 8px;
     background: rgb(247, 250, 252);
     border-radius: 50%;
-    transition: 300ms;
+    transition: all 300ms ease;
 }
-
-.footer__social--link svg {
+.footer__social--link {
     height: 16px;
     width: 16px;
 }
