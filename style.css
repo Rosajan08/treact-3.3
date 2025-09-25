@@ -119,7 +119,7 @@ button {
     text-align: center;
     padding-block: 1px;
     padding-inline: 6px;
-    border width: 2px;
+    border-width: 2px;
 }
 
 .menu {
@@ -519,6 +519,8 @@ section {
     line-height: 1.5;
     margin: 16px 0;
     letter-spacing: 0.025em;
+    text-align: left;
+   
 }
 
 @media (max-width: 1024px) {
@@ -548,6 +550,7 @@ section {
     font-weight: bold;
     transition: all 300ms ease;
     cursor: pointer;
+    margin-top: 32px;
 }
 
 .quality__img--wrapper {
@@ -1422,4 +1425,4 @@ media
 
 */
 
-@media (Small phones, large phones, ipads, laptops)
+/* @media (Small phones, large phones, ipads, laptops) */
