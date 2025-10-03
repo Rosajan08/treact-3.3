@@ -1,4 +1,4 @@
-function OpenMenu(params) {
+function openMenu(params) {
     document.body.classList += " menu--open"
 }
 
