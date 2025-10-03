@@ -301,6 +301,15 @@ p {
     }
 }
 
+@media (max-width: 1024px) {
+    .start__button {
+        padding: 16px 32px;
+    }
+    .header__email--input {
+        position: static;
+    }
+}
+
 .header__email--input{
     width: 100%;
     color: rgb(36, 62, 99);
@@ -330,7 +339,7 @@ p {
     margin: 8px;
     border-radius: 500px;
     border-style: none;
-    transition: 300ms;
+    transition: all 300ms ease;
 }
 
 @media (max-width: 640px) {
@@ -340,11 +349,6 @@ p {
         margin: 16px 0px;
         margin-bottom: 0px;
         line-height: 1.5;
-    }
-}
-
-@media (max-width: 1024px) {
-    .header__description {
     }
 }
 
@@ -451,8 +455,25 @@ main{
     margin-bottom: 96px;
 }
 
-#features {
+.features {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .features {
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
 }
 
 .section {
@@ -470,7 +491,7 @@ main{
 }
 
 #features .row__narrow {
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center; 
 }
@@ -504,13 +525,6 @@ main{
         font-size: 36px;
     }
 }
-
-@media (max-width: 1024px) {
-    #features .section__title, #pricing .section__title {
-        font-size: 48px;
-    }
-}
-
 
 #features .section__para {
     font-size: 16px;
@@ -573,12 +587,6 @@ main{
     .feature {
         width: auto;
         max-width: 384px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .feature {
-        width: calc(50%);
     }
 }
 
@@ -654,6 +662,7 @@ img {
 @media (max-width: 1024px) {
     .feature__para {
         max-width: none;
+        text-align: center;
     }
 }
 
@@ -765,7 +774,7 @@ Quality
 
 @media (max-width: 1024px) {
     .section__title {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
 
@@ -1182,7 +1191,6 @@ section {
     margin-right: 0px;
     display: flex;
     max-width: none;
-    flex-direction: row;
 }
 
 @media (max-width: 1024px) {
@@ -1389,7 +1397,6 @@ p {
 .plans {
     display: flex;
     position: relative;
-    flex-direction: row;
     width: 100%;
     justify-content: space-between;
 }
