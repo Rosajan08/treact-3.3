@@ -1590,12 +1590,14 @@ p {
 
 @media (max-width: 1280px) {
     .plan__bottom {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
 .plan__bottom {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
