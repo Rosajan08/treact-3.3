@@ -6,7 +6,6 @@
 
 }
 
-
 #Landing {
     padding: 0 32px;
     display: block;
@@ -338,7 +337,7 @@ p {
     .header__email--btn {
         width: 100%;
         padding: 16px 0;
-        margin: 16px 0;
+        margin: 16px 0px;
         margin-bottom: 0px;
         line-height: 1.5;
     }
@@ -347,6 +346,7 @@ p {
 @media (max-width: 1024px) {
     .header__description {
     }
+}
 
 .header__customers--title {
     margin-top: 80px;
@@ -668,7 +668,7 @@ img {
     margin-top: 16px;
     font-size: 16px;
     max-width: calc(634px / 3);
-    color: rgb(124,139, 161);
+    color: rgb(124, 139, 161);
     line-height: 2;
     font-weight: 500;
 }
@@ -679,7 +679,7 @@ Quality
 
 */
 
-section {
+.section {
     padding: 0 32px;
 }
 
@@ -982,6 +982,7 @@ img {
         font-size: 30px;
     }
 }
+
 @media (max-width: 640px) {
     .section__title {
         line-height: 1.25;
@@ -1215,6 +1216,7 @@ section {
         align-items: center;
     }
 }
+
 @media (max-width: 1024px) {
     .value {
         margin-top: 2.5rem;
@@ -1231,6 +1233,7 @@ section {
         align-items: center;
     }
 }
+
 @media (max-width: 1024px) {
     .value {
         margin-top: 2.5rem;
@@ -1642,6 +1645,7 @@ Testimonials
         padding-left: 48px;
     }
 }
+
 @media (max-width: 1280px) {
     .testimonials__description {
         width: calc(100% - 40%);
@@ -1887,7 +1891,7 @@ Start
     }
 }
 
-.start__title, .start__buttons {
+.start__title, .start__buttons{
     width: 50%;
 }
 
@@ -2116,3 +2120,4 @@ footer {
 
 @media (max-width: 1080px){
 }
+
